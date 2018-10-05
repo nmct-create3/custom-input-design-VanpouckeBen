@@ -786,6 +786,7 @@ input::placeholder {
 
 .c-toggle__label {
     display: flex;
+    align-items: center;
 }
 
 .c-toggle__input {
@@ -810,10 +811,12 @@ input::placeholder {
 
 .c-toggle__checkbox-hidden:checked+.c-toggle__label .c-toggle__input::after {
     transform: translateX(28px);
+    margin-top: 1px;
 }
 
 .c-toggle__checkbox-hidden:checked+.c-toggle__label .c-toggle__input {
     background-color: var(--color-alpha-dark);
+    height: 24px;
 }
 
 .c-toggle__checkbox-hidden:focus+.c-toggle__label .c-toggle__input {
@@ -826,9 +829,11 @@ input::placeholder {
 
 .c-toggle__checkbox-hidden:checked+.c-toggle__label .c-toggle__input--alternative {
     background-color: var(--color-alpha-xx-light);
+    height: 20px;
 }
 
 .c-toggle__checkbox-hidden:checked+.c-toggle__label .c-toggle__input--alternative::after {
+    margin-top: 0px;
     transform: translateX(28px);
     background-color: var(--color-alpha);
 }
